@@ -5,7 +5,7 @@ use std::{
   ptr::copy_nonoverlapping,
 };
 
-use stuff::{_println, buffer::WasmBuffer, define_wasm_import};
+use lib_wasm::{_println, buffer::WasmBuffer, define_wasm_import};
 
 extern "C" {
   fn wasm_printnr(number: i64);

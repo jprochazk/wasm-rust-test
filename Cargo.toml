@@ -8,14 +8,14 @@ edition = "2021"
 crate-type = ["cdylib"]
 
 [dependencies]
-stuff.workspace = true
-stuff_derive.workspace = true
+lib_wasm.workspace = true
+lib_wasm_proc.workspace = true
 
 [workspace]
 resolver = "2"
-members = ["crates/*"]
+members = ["lib_wasm", "lib_wasm_proc"]
 
 [workspace.dependencies]
-stuff = { path = "crates/stuff"  }
-stuff_derive = { path = "crates/stuff_derive" }
+lib_wasm = { path = "lib_wasm"  }
+lib_wasm_proc = { path = "lib_wasm_proc" }
 
