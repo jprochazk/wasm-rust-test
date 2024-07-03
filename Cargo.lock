@@ -3,21 +3,6 @@
 version = 3
 
 [[package]]
-name = "lib_wasm"
-version = "0.1.0"
-dependencies = [
- "paste",
-]
-
-[[package]]
-name = "lib_wasm_proc"
-version = "0.1.0"
-dependencies = [
- "quote",
- "syn",
-]
-
-[[package]]
 name = "paste"
 version = "1.0.15"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -42,6 +27,21 @@ dependencies = [
 ]
 
 [[package]]
+name = "stuff"
+version = "0.1.0"
+dependencies = [
+ "paste",
+]
+
+[[package]]
+name = "stuff_derive"
+version = "0.1.0"
+dependencies = [
+ "quote",
+ "syn",
+]
+
+[[package]]
 name = "syn"
 version = "2.0.68"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -62,6 +62,6 @@ checksum = "3354b9ac3fae1ff6755cb6db53683adb661634f67557942dea4facebec0fee4b"
 name = "wasm-rust-test"
 version = "0.1.0"
 dependencies = [
- "lib_wasm",
- "lib_wasm_proc",
+ "stuff",
+ "stuff_derive",
 ]

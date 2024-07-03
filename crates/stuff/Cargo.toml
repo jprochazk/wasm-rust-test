@@ -1,10 +1,9 @@
 [package]
-name = "lib_wasm"
+name = "stuff"
 version = "0.1.0"
 edition = "2021"
 
 [lib]
-crate-type = ["cdylib"]
 
 [dependencies]
 paste = "1.0.15"
